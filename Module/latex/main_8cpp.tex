@@ -1,0 +1,75 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный модуль программы для шифрования методом маршрутной перестановки  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}module.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_a5862a019fa3896b947117f91358b107e}{is\+Valid\+Key}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверка корректности ключа \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главный модуль программы для шифрования методом маршрутной перестановки 
+
+(\mbox{\hyperlink{classRouteCipher}{Route\+Cipher}}) \begin{DoxyAuthor}{Автор}
+Пресняков Александр 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025
+\end{DoxyDate}
+Программа предоставляет интерактивный интерфейс для шифрования и дешифрования текста методом табличной маршрутной перестановки. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a5862a019fa3896b947117f91358b107e}\label{main_8cpp_a5862a019fa3896b947117f91358b107e}} 
+\index{main.cpp@{main.cpp}!isValidKey@{isValidKey}}
+\index{isValidKey@{isValidKey}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{isValidKey()}{isValidKey()}}
+{\footnotesize\ttfamily bool is\+Valid\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверка корректности ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & -\/ строка с ключом \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если ключ валиден, false в противном случае
+\end{DoxyReturn}
+Ключ должен быть положительным целым числом, состоящим только из цифр \mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция программы 
+
+\begin{DoxyReturn}{Возвращает}
+0 при успешном завершении, 1 при ошибке
+\end{DoxyReturn}
+Устанавливает локаль для работы с русским языком, принимает ключ от пользователя, создаёт экземпляр шифра \mbox{\hyperlink{classRouteCipher}{Route\+Cipher}} и предоставляет интерактивное меню для операций шифрования/дешифрования 

@@ -1,0 +1,88 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный модуль программы для тестирования шифра Гронсфельда  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$codecvt$>$}\newline
+{\ttfamily \#include \char`\"{}mod\+Alpha\+Cipher.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a2790da05f4fa7360d2092f245ef2cd7f}{check}} (const std\+::wstring \&Text, const std\+::wstring \&key, bool destruct\+Cipher\+Text=false)
+\begin{DoxyCompactList}\small\item\em Функция для проверки работы шифра \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a7e14216fe32ebb188012a9d60e71f44f}{interactive\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Интерактивный режим работы программы \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главный модуль программы для тестирования шифра Гронсфельда 
+
+\begin{DoxyAuthor}{Автор}
+Пресняков Александр 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a2790da05f4fa7360d2092f245ef2cd7f}\label{main_8cpp_a2790da05f4fa7360d2092f245ef2cd7f}} 
+\index{main.cpp@{main.cpp}!check@{check}}
+\index{check@{check}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily void check (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{Text,  }\item[{const std\+::wstring \&}]{key,  }\item[{bool}]{destruct\+Cipher\+Text = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Функция для проверки работы шифра 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Text} & -\/ исходный текст \\
+\hline
+{\em key} & -\/ ключ шифрования \\
+\hline
+{\em destruct\+Cipher\+Text} & -\/ флаг для порчи шифртекста (тестирование обработки ошибок)\\
+\hline
+\end{DoxyParams}
+Шифрует текст, опционально портит его, затем расшифровывает и сравнивает \mbox{\Hypertarget{main_8cpp_a7e14216fe32ebb188012a9d60e71f44f}\label{main_8cpp_a7e14216fe32ebb188012a9d60e71f44f}} 
+\index{main.cpp@{main.cpp}!interactiveMode@{interactiveMode}}
+\index{interactiveMode@{interactiveMode}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{interactiveMode()}{interactiveMode()}}
+{\footnotesize\ttfamily void interactive\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Интерактивный режим работы программы 
+
+Позволяет пользователю вводить ключ, шифровать/дешифровать тексты и запускать автоматическое тестирование \mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция программы 
+
+\begin{DoxyReturn}{Возвращает}
+0 при успешном завершении
+\end{DoxyReturn}
+Устанавливает локаль и запускает интерактивный режим 

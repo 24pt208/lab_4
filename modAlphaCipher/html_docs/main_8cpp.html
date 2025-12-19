@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CryptoLab - Шифрование Гронсфельда и Маршрутной Перестановкой: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CryptoLab - Шифрование Гронсфельда и Маршрутной Перестановкой
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главный модуль программы для тестирования шифра Гронсфельда  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;codecvt&gt;</code><br />
+<code>#include &quot;<a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title="Главный модуль программы для тестирования шифра Гронсфельда" alt="" coords="107,5,189,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" title=" " alt="" coords="61,155,123,181"/>
+<area shape="rect" title=" " alt="" coords="147,155,221,181"/>
+<area shape="rect" href="modAlphaCipher_8h.html" title="Заголовочный файл класса modAlphaCipher для шифрования методом Гронсфельда" alt="" coords="211,80,352,107"/>
+<area shape="rect" title=" " alt="" coords="431,155,494,181"/>
+<area shape="rect" title=" " alt="" coords="519,155,577,181"/>
+<area shape="rect" title=" " alt="" coords="245,155,296,181"/>
+<area shape="rect" title=" " alt="" coords="321,155,407,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a2790da05f4fa7360d2092f245ef2cd7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2790da05f4fa7360d2092f245ef2cd7f">check</a> (const std::wstring &amp;Text, const std::wstring &amp;key, bool destructCipherText=false)</td></tr>
+<tr class="memdesc:a2790da05f4fa7360d2092f245ef2cd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для проверки работы шифра  <a href="main_8cpp.html#a2790da05f4fa7360d2092f245ef2cd7f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2790da05f4fa7360d2092f245ef2cd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e14216fe32ebb188012a9d60e71f44f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7e14216fe32ebb188012a9d60e71f44f">interactiveMode</a> ()</td></tr>
+<tr class="memdesc:a7e14216fe32ebb188012a9d60e71f44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерактивный режим работы программы  <a href="main_8cpp.html#a7e14216fe32ebb188012a9d60e71f44f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7e14216fe32ebb188012a9d60e71f44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция программы  <a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главный модуль программы для тестирования шифра Гронсфельда </p>
+<dl class="section author"><dt>Автор</dt><dd>Пресняков Александр </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025 </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a2790da05f4fa7360d2092f245ef2cd7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2790da05f4fa7360d2092f245ef2cd7f">&#9670;&nbsp;</a></span>check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>Text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>destructCipherText</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для проверки работы шифра </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Text</td><td>- исходный текст </td></tr>
+    <tr><td class="paramname">key</td><td>- ключ шифрования </td></tr>
+    <tr><td class="paramname">destructCipherText</td><td>- флаг для порчи шифртекста (тестирование обработки ошибок)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Шифрует текст, опционально портит его, затем расшифровывает и сравнивает </p>
+
+</div>
+</div>
+<a id="a7e14216fe32ebb188012a9d60e71f44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e14216fe32ebb188012a9d60e71f44f">&#9670;&nbsp;</a></span>interactiveMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void interactiveMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Интерактивный режим работы программы </p>
+<p>Позволяет пользователю вводить ключ, шифровать/дешифровать тексты и запускать автоматическое тестирование </p>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция программы </p>
+<dl class="section return"><dt>Возвращает</dt><dd>0 при успешном завершении</dd></dl>
+<p>Устанавливает локаль и запускает интерактивный режим </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RouteCipher: Исходный файл module.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RouteCipher
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">module.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="module_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;locale&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classcipher__error.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcipher__error.html">cipher_error</a> : <span class="keyword">public</span> std::invalid_argument {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classcipher__error.html#aac662e216a84bfeb873303c7b88d029e">   25</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html#aac662e216a84bfeb873303c7b88d029e">cipher_error</a>(<span class="keyword">const</span> std::string&amp; what_arg):</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::invalid_argument(what_arg) {}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classcipher__error.html#a18cf27d9c2cd2538d3cb8f17e9a55f3e">   32</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html#a18cf27d9c2cd2538d3cb8f17e9a55f3e">cipher_error</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* what_arg):</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::invalid_argument(what_arg) {}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classRouteCipher.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRouteCipher.html">RouteCipher</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classRouteCipher.html#a9b58871c187309f4defabc3d9bc86ad5">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRouteCipher.html#a9b58871c187309f4defabc3d9bc86ad5">columns</a>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::wstring <a class="code" href="classRouteCipher.html#ac4fbea53ed735095a083994ab562cc7a">getValidKey</a>(<span class="keyword">const</span> std::wstring&amp; s);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::wstring <a class="code" href="classRouteCipher.html#a49b60ff42e6348f87435031635f2e788">getValidOpenText</a>(<span class="keyword">const</span> std::wstring&amp; s);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::wstring <a class="code" href="classRouteCipher.html#a9e0228f738bca7cf69baac3b57109d0e">getValidCipherText</a>(<span class="keyword">const</span> std::wstring&amp; s);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classRouteCipher.html#a72db9f8e6ec440800a9eec4ed53fa5d5">   71</a></span>&#160;    <a class="code" href="classRouteCipher.html#a72db9f8e6ec440800a9eec4ed53fa5d5">RouteCipher</a>() = <span class="keyword">delete</span>; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classRouteCipher.html#a72db9f8e6ec440800a9eec4ed53fa5d5">RouteCipher</a>(<span class="keyword">const</span> std::wstring&amp; key);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRouteCipher.html#a0db8f96ecbb04f24ba280a73963fc648">setKey</a>(<span class="keyword">const</span> std::wstring&amp; key);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::wstring <a class="code" href="classRouteCipher.html#a7b6ecd7377f29bf2aaa5529060cf40d3">getKey</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::wstring <a class="code" href="classRouteCipher.html#ababf46a53a39ce2a2c8e65ebd2b9e7c7">encrypt</a>(<span class="keyword">const</span> std::wstring&amp; text);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::wstring <a class="code" href="classRouteCipher.html#a822f59c34a0ea9cad778bd34a747e420">decrypt</a>(<span class="keyword">const</span> std::wstring&amp; text);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
+<div class="ttc" id="aclassRouteCipher_html"><div class="ttname"><a href="classRouteCipher.html">RouteCipher</a></div><div class="ttdoc">Класс для шифрования методом маршрутной перестановки</div><div class="ttdef"><b>Definition:</b> module.h:42</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a0db8f96ecbb04f24ba280a73963fc648"><div class="ttname"><a href="classRouteCipher.html#a0db8f96ecbb04f24ba280a73963fc648">RouteCipher::setKey</a></div><div class="ttdeci">void setKey(const std::wstring &amp;key)</div><div class="ttdoc">Установка нового ключа</div><div class="ttdef"><b>Definition:</b> module.cpp:90</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a49b60ff42e6348f87435031635f2e788"><div class="ttname"><a href="classRouteCipher.html#a49b60ff42e6348f87435031635f2e788">RouteCipher::getValidOpenText</a></div><div class="ttdeci">std::wstring getValidOpenText(const std::wstring &amp;s)</div><div class="ttdoc">Проверка и нормализация открытого текста</div><div class="ttdef"><b>Definition:</b> module.cpp:53</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a72db9f8e6ec440800a9eec4ed53fa5d5"><div class="ttname"><a href="classRouteCipher.html#a72db9f8e6ec440800a9eec4ed53fa5d5">RouteCipher::RouteCipher</a></div><div class="ttdeci">RouteCipher()=delete</div><div class="ttdoc">Удалённый конструктор по умолчанию</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a7b6ecd7377f29bf2aaa5529060cf40d3"><div class="ttname"><a href="classRouteCipher.html#a7b6ecd7377f29bf2aaa5529060cf40d3">RouteCipher::getKey</a></div><div class="ttdeci">std::wstring getKey() const</div><div class="ttdoc">Получение текущего ключа</div><div class="ttdef"><b>Definition:</b> module.cpp:99</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a822f59c34a0ea9cad778bd34a747e420"><div class="ttname"><a href="classRouteCipher.html#a822f59c34a0ea9cad778bd34a747e420">RouteCipher::decrypt</a></div><div class="ttdeci">std::wstring decrypt(const std::wstring &amp;text)</div><div class="ttdoc">Дешифрование текста</div><div class="ttdef"><b>Definition:</b> module.cpp:133</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a9b58871c187309f4defabc3d9bc86ad5"><div class="ttname"><a href="classRouteCipher.html#a9b58871c187309f4defabc3d9bc86ad5">RouteCipher::columns</a></div><div class="ttdeci">int columns</div><div class="ttdoc">Количество столбцов таблицы (ключ шифрования)</div><div class="ttdef"><b>Definition:</b> module.h:44</div></div>
+<div class="ttc" id="aclassRouteCipher_html_a9e0228f738bca7cf69baac3b57109d0e"><div class="ttname"><a href="classRouteCipher.html#a9e0228f738bca7cf69baac3b57109d0e">RouteCipher::getValidCipherText</a></div><div class="ttdeci">std::wstring getValidCipherText(const std::wstring &amp;s)</div><div class="ttdoc">Проверка шифртекста</div><div class="ttdef"><b>Definition:</b> module.cpp:74</div></div>
+<div class="ttc" id="aclassRouteCipher_html_ababf46a53a39ce2a2c8e65ebd2b9e7c7"><div class="ttname"><a href="classRouteCipher.html#ababf46a53a39ce2a2c8e65ebd2b9e7c7">RouteCipher::encrypt</a></div><div class="ttdeci">std::wstring encrypt(const std::wstring &amp;text)</div><div class="ttdoc">Шифрование текста</div><div class="ttdef"><b>Definition:</b> module.cpp:109</div></div>
+<div class="ttc" id="aclassRouteCipher_html_ac4fbea53ed735095a083994ab562cc7a"><div class="ttname"><a href="classRouteCipher.html#ac4fbea53ed735095a083994ab562cc7a">RouteCipher::getValidKey</a></div><div class="ttdeci">std::wstring getValidKey(const std::wstring &amp;s)</div><div class="ttdoc">Проверка и нормализация ключа</div><div class="ttdef"><b>Definition:</b> module.cpp:31</div></div>
+<div class="ttc" id="aclasscipher__error_html"><div class="ttname"><a href="classcipher__error.html">cipher_error</a></div><div class="ttdoc">Класс исключения для ошибок шифрования</div><div class="ttdef"><b>Definition:</b> module.h:19</div></div>
+<div class="ttc" id="aclasscipher__error_html_a18cf27d9c2cd2538d3cb8f17e9a55f3e"><div class="ttname"><a href="classcipher__error.html#a18cf27d9c2cd2538d3cb8f17e9a55f3e">cipher_error::cipher_error</a></div><div class="ttdeci">cipher_error(const char *what_arg)</div><div class="ttdoc">Конструктор исключения с передачей строки (C-стиль)</div><div class="ttdef"><b>Definition:</b> module.h:32</div></div>
+<div class="ttc" id="aclasscipher__error_html_aac662e216a84bfeb873303c7b88d029e"><div class="ttname"><a href="classcipher__error.html#aac662e216a84bfeb873303c7b88d029e">cipher_error::cipher_error</a></div><div class="ttdeci">cipher_error(const std::string &amp;what_arg)</div><div class="ttdoc">Конструктор исключения с передачей строки</div><div class="ttdef"><b>Definition:</b> module.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

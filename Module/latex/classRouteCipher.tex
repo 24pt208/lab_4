@@ -1,0 +1,263 @@
+\hypertarget{classRouteCipher}{}\doxysection{Класс Route\+Cipher}
+\label{classRouteCipher}\index{RouteCipher@{RouteCipher}}
+
+
+Класс для шифрования методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$module.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRouteCipher_a72db9f8e6ec440800a9eec4ed53fa5d5}\label{classRouteCipher_a72db9f8e6ec440800a9eec4ed53fa5d5}} 
+\mbox{\hyperlink{classRouteCipher_a72db9f8e6ec440800a9eec4ed53fa5d5}{Route\+Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em Удалённый конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRouteCipher_a58b972d9dc16f435e92bd9ca46812c48}{Route\+Cipher}} (const std\+::wstring \&key)
+\begin{DoxyCompactList}\small\item\em Конструктор с установкой ключа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRouteCipher_a0db8f96ecbb04f24ba280a73963fc648}{set\+Key}} (const std\+::wstring \&key)
+\begin{DoxyCompactList}\small\item\em Установка нового ключа \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classRouteCipher_a7b6ecd7377f29bf2aaa5529060cf40d3}{get\+Key}} () const
+\begin{DoxyCompactList}\small\item\em Получение текущего ключа \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classRouteCipher_ababf46a53a39ce2a2c8e65ebd2b9e7c7}{encrypt}} (const std\+::wstring \&text)
+\begin{DoxyCompactList}\small\item\em Шифрование текста \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classRouteCipher_a822f59c34a0ea9cad778bd34a747e420}{decrypt}} (const std\+::wstring \&text)
+\begin{DoxyCompactList}\small\item\em Дешифрование текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+std\+::wstring \mbox{\hyperlink{classRouteCipher_ac4fbea53ed735095a083994ab562cc7a}{get\+Valid\+Key}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверка и нормализация ключа \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classRouteCipher_a49b60ff42e6348f87435031635f2e788}{get\+Valid\+Open\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверка и нормализация открытого текста \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classRouteCipher_a9e0228f738bca7cf69baac3b57109d0e}{get\+Valid\+Cipher\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверка шифртекста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRouteCipher_a9b58871c187309f4defabc3d9bc86ad5}\label{classRouteCipher_a9b58871c187309f4defabc3d9bc86ad5}} 
+int \mbox{\hyperlink{classRouteCipher_a9b58871c187309f4defabc3d9bc86ad5}{columns}}
+\begin{DoxyCompactList}\small\item\em Количество столбцов таблицы (ключ шифрования) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования методом маршрутной перестановки 
+
+Использует таблицу с заданным числом столбцов. Запись\+: слева направо, сверху вниз. Считывание\+: сверху вниз, справа налево. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classRouteCipher_a58b972d9dc16f435e92bd9ca46812c48}\label{classRouteCipher_a58b972d9dc16f435e92bd9ca46812c48}} 
+\index{RouteCipher@{RouteCipher}!RouteCipher@{RouteCipher}}
+\index{RouteCipher@{RouteCipher}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{RouteCipher()}{RouteCipher()}}
+{\footnotesize\ttfamily Route\+Cipher\+::\+Route\+Cipher (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Конструктор с установкой ключа 
+
+Конструктор \mbox{\hyperlink{classRouteCipher}{Route\+Cipher}}.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & -\/ ключ шифрования (количество столбцов) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если ключ невалиден \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classRouteCipher_a822f59c34a0ea9cad778bd34a747e420}\label{classRouteCipher_a822f59c34a0ea9cad778bd34a747e420}} 
+\index{RouteCipher@{RouteCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring Route\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Дешифрование текста 
+
+Дешифрование текста методом маршрутной перестановки
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & -\/ шифртекст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пуст или содержит не заглавные буквы \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classRouteCipher_ababf46a53a39ce2a2c8e65ebd2b9e7c7}\label{classRouteCipher_ababf46a53a39ce2a2c8e65ebd2b9e7c7}} 
+\index{RouteCipher@{RouteCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring Route\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Шифрование текста 
+
+Шифрование текста методом маршрутной перестановки
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & -\/ открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пуст после очистки \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classRouteCipher_a7b6ecd7377f29bf2aaa5529060cf40d3}\label{classRouteCipher_a7b6ecd7377f29bf2aaa5529060cf40d3}} 
+\index{RouteCipher@{RouteCipher}!getKey@{getKey}}
+\index{getKey@{getKey}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily std\+::wstring Route\+Cipher\+::get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получение текущего ключа 
+
+\begin{DoxyReturn}{Возвращает}
+Строковое представление ключа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRouteCipher_a9e0228f738bca7cf69baac3b57109d0e}\label{classRouteCipher_a9e0228f738bca7cf69baac3b57109d0e}} 
+\index{RouteCipher@{RouteCipher}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily std\+::wstring Route\+Cipher\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка шифртекста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & -\/ шифртекст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Текст без изменений 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пуст или содержит не заглавные буквы \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classRouteCipher_ac4fbea53ed735095a083994ab562cc7a}\label{classRouteCipher_ac4fbea53ed735095a083994ab562cc7a}} 
+\index{RouteCipher@{RouteCipher}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily std\+::wstring Route\+Cipher\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка и нормализация ключа 
+
+Проверка ключа на валидность
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & -\/ исходный ключ (строка с числом) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидная строка ключа 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если ключ пустой, содержит не цифры, или число $<$= 0\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & -\/ исходный ключ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Нормализованная строка ключа 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если ключ невалиден \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classRouteCipher_a49b60ff42e6348f87435031635f2e788}\label{classRouteCipher_a49b60ff42e6348f87435031635f2e788}} 
+\index{RouteCipher@{RouteCipher}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily std\+::wstring Route\+Cipher\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка и нормализация открытого текста 
+
+Проверка и очистка открытого текста
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & -\/ исходный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Текст в верхнем регистре без не-\/букв 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если после очистки текст пуст\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & -\/ исходный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Текст в верхнем регистре без не-\/букв 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пуст после очистки \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classRouteCipher_a0db8f96ecbb04f24ba280a73963fc648}\label{classRouteCipher_a0db8f96ecbb04f24ba280a73963fc648}} 
+\index{RouteCipher@{RouteCipher}!setKey@{setKey}}
+\index{setKey@{setKey}!RouteCipher@{RouteCipher}}
+\doxysubsubsection{\texorpdfstring{setKey()}{setKey()}}
+{\footnotesize\ttfamily void Route\+Cipher\+::set\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Установка нового ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & -\/ новый ключ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если ключ невалиден \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{module_8h}{module.\+h}}\item 
+\mbox{\hyperlink{module_8cpp}{module.\+cpp}}\end{DoxyCompactItemize}
